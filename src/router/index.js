@@ -1,0 +1,51 @@
+import { createRouter, createWebHistory } from 'vue-router'
+
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {path: '/',
+      name: 'menu-principal',
+      component: () => import('../views/VistaPrincipal.vue')},
+    {path: '/lista-de-avisos',
+      name: 'lista-de-avisos', 
+      component: () => import('../components/Aviso/ListaAvisos.vue')},
+    {path: '/crear-aviso',
+        name: 'crear-aviso', 
+        component: () => import('../components/Aviso/CrearAviso.vue')},
+    {path: '/editar-aviso/:id',
+          name: 'editar-aviso', 
+          component: () => import('../components/Aviso/EditarAviso.vue'),
+          props: true,   },
+    {path: '/lista-de-obras',
+      name: 'lista-de-obras', 
+      component: () => import('../components/Obra/ListaObras.vue'),},
+    {path: '/lista-de-empleados',
+      name: 'lista-de-empleados', 
+      component: () => import('../components/Empleado/ListaEmpleados.vue'),},
+    {path: '/lista-de-clientes',
+      name: 'lista-de-clientes', 
+      component: () => import('../components/Cliente/ListaClientes.vue'),},
+    {path: '/crear-obra',
+      name: 'crear-obra', 
+      component: () => import('../components/Obra/CrearObra.vue')},
+    {path: '/crear-empleado',
+      name: 'crear-empleado', 
+      component: () => import('../components/Empleado/CrearEmpleado.vue')},
+    {path: '/crear-cliente',
+      name: 'crear-cliente', 
+      component: () => import('../components/Cliente/CrearCLiente.vue')},
+    {path: '/editar-obra/:id',
+      name: 'editar-obra', 
+      component: () => import('../components/Obra/EditarObra.vue')},
+    {path: '/editar-empleado/:id',
+      name: 'editar-empleado', 
+      component: () => import('../components/Empleado/EditarEmpleado.vue')},
+    {path: '/editar-cliente/:id',
+      name: 'editar-cliente', 
+      component: () => import('../components/Cliente/EditarCliente.vue')},
+
+  ],
+})
+
+export default router
