@@ -189,7 +189,7 @@ const editarAviso = async () => {
         }
     
   } catch (e) {
-    console.error("Error al guardar el aviso:", e);
+    console.error("Hola al guardar el aviso:", e);
  
   }
 };
