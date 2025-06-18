@@ -1,0 +1,13 @@
+.card:hover{
+    transform: scale(1.03);
+  }
+  
+  .button:hover{
+    background-color: rgb(233, 231, 231);
+  }
+
+  .card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}

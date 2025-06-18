@@ -1,28 +1,27 @@
 # tfg-front
 
-This template should help get you started developing with Vue 3 in Vite.
+Frontend del Trabajo Fin de Grado desarrollado con Vue 3.
 
-## Recommended IDE Setup
+## Requisitos previos
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Instalar Node.js con una versión 18.3 o superior.
 
-## Customize configuration
+Visual Studio Code con la extensión: Vue - Official
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Configuración del proyecto
 
-## Project Setup
-
+Una vez clonamos el proyecto, se ejecuta
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Comando para compilar el proyecto en desarrollo
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Comando para compilar el proyecto para producción
 
 ```sh
 npm run build

@@ -1,0 +1,38 @@
+
+.fill-height {
+  height: 100vh !important;
+}
+
+.left-panel {
+  background: white;
+  color: white;
+}
+
+.right-panel {
+  background: linear-gradient(90deg, #ffffff, #64B5F6);
+}
+
+@media (max-width: 956px) {
+  .right-panel {
+    background: linear-gradient(to bottom, #ffffff, #64B5F6);
+  }
+}
+
+.card-login {
+  background: white !important;
+  border-radius: 20px !important;
+  padding: 30px !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.button-login {
+  background: linear-gradient(45deg, #1976D2, #64B5F6) !important;
+  color: white !important;
+  font-weight: bold !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.button-login:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}

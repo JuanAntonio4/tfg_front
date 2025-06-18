@@ -1,51 +1,77 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import ListaAvisosComponent from '@/components/Avisos/ListaAvisosComponent.vue'
+import FormAvisosComponent from '@/components/Avisos/FormAvisosComponent.vue'
+import ListaObrasComponent from '@/components/Obras/ListaObrasComponent.vue'
+import FormObrasComponent from '@/components/Obras/FormObrasComponent.vue'
+import ListaEmpleadosComponent from '@/components/Empleados/ListaEmpleadosComponent.vue'
+import FormEmpleadosComponent from '@/components/Empleados/FormEmpleadosComponent.vue'
+import ListaClientesComponent from '@/components/Clientes/ListaClientesComponent.vue'
+import FormClienteComponent from '@/components/Clientes/FormClienteComponent.vue'
+import LoginComponent from '@/components/Login/LoginComponent.vue'
+import PresupuestosComponent from '@/components/Presupuestos/PresupuestosComponent.vue'
+import InformesComponent from '@/components/Informes/InformesComponent.vue'
+import FormTrabajoRealizadoComponent from '@/components/TrabajoRealizado/FormTrabajoRealizadoComponent.vue'
+import VistaPrincipal from '@/views/VistaPrincipal.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+
     {path: '/',
+      name: 'login', 
+      component: LoginComponent},
+
+    {path: '/menu-principal',
       name: 'menu-principal',
-      component: () => import('../views/VistaPrincipal.vue')},
+      component: VistaPrincipal},
+      
     {path: '/lista-de-avisos',
       name: 'lista-de-avisos', 
-      component: () => import('../components/Aviso/ListaAvisos.vue')},
-    {path: '/crear-aviso',
-        name: 'crear-aviso', 
-        component: () => import('../components/Aviso/CrearAviso.vue')},
-    {path: '/editar-aviso/:id',
-          name: 'editar-aviso', 
-          component: () => import('../components/Aviso/EditarAviso.vue'),
-          props: true,   },
+      component: ListaAvisosComponent},
+
     {path: '/lista-de-obras',
       name: 'lista-de-obras', 
-      component: () => import('../components/Obra/ListaObras.vue'),},
+      component: ListaObrasComponent},
+
     {path: '/lista-de-empleados',
       name: 'lista-de-empleados', 
-      component: () => import('../components/Empleado/ListaEmpleados.vue'),},
+      component: ListaEmpleadosComponent},
+
     {path: '/lista-de-clientes',
       name: 'lista-de-clientes', 
-      component: () => import('../components/Cliente/ListaClientes.vue'),},
-    {path: '/crear-obra',
-      name: 'crear-obra', 
-      component: () => import('../components/Obra/CrearObra.vue')},
-    {path: '/crear-empleado',
-      name: 'crear-empleado', 
-      component: () => import('../components/Empleado/CrearEmpleado.vue')},
-    {path: '/crear-cliente',
-      name: 'crear-cliente', 
-      component: () => import('../components/Cliente/CrearCLiente.vue')},
-    {path: '/editar-obra/:id',
-      name: 'editar-obra', 
-      component: () => import('../components/Obra/EditarObra.vue')},
-    {path: '/editar-empleado/:id',
-      name: 'editar-empleado', 
-      component: () => import('../components/Empleado/EditarEmpleado.vue')},
-    {path: '/editar-cliente/:id',
-      name: 'editar-cliente', 
-      component: () => import('../components/Cliente/EditarCliente.vue')},
+      component: ListaClientesComponent},
+
+    {path: '/formulario-aviso/:id?',
+      name: 'formulario-aviso', 
+      component: FormAvisosComponent},
+
+    {path: '/formulario-obra/:id?',
+      name: 'formulario-obra', 
+      component: FormObrasComponent},
+
+    {path: '/formulario-empleado/:id?',
+      name: 'formulario-empleado', 
+      component: FormEmpleadosComponent},
+
+    {path: '/formulario-cliente/:id?',
+      name: 'formulario-cliente', 
+      component: FormClienteComponent},
+
+    {path: '/introducir-trabajo/:id/:tipo',
+      name: 'introducir-trabajo', 
+      component: FormTrabajoRealizadoComponent},
+
+    {path: '/presupuesto-aviso/:id',
+      name: 'presupuesto-aviso', 
+      component: PresupuestosComponent},
+
+    {path: '/informes/:id/:tipo',
+      name: 'informes', 
+      component: InformesComponent},
 
   ],
 })
+
 
 export default router

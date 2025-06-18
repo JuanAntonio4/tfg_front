@@ -1,0 +1,147 @@
+table {
+    width: 95%;
+    margin: 15px auto; 
+    table-layout: auto; 
+    border: 2px solid black; 
+    text-align: left;
+  }
+  
+  td, th {
+    border-left: 2px solid black; 
+    padding: 5px; 
+    text-align: left;
+    font-size: 14px;
+    vertical-align: middle; 
+  }
+  
+  strong {
+    display: inline-block;
+    margin-top: 5px; 
+    
+  }
+  
+  tbody {
+    overflow-wrap: break-word; 
+    text-align: left;
+    
+  }
+  
+  .cabecera1 {
+    background-color: #fee49f;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 0px ;
+  
+  }
+  
+  .cabecera2 {
+    background-color: #fee49f;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: left;
+  }
+  
+  .cabecera3 {
+    background-color: #d6d6d6;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .cabecera4 {
+    background-color: white;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .cabecera5 {
+    background-color: #d6d6d6;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .cabecera6 {
+    background-color: white;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left;
+  }
+  
+  .cabecera7 {
+    background-color: #d6d6d6;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: left;
+  
+  }
+  
+  .cabecera8 {
+    background-color: #fee49f;
+    font-weight: bold;
+    text-align: left;
+  
+  
+  }
+
+  .celda1{
+    background-color: #fee49f;
+    text-align: left;
+    border-bottom: 0px;
+  }
+  
+  
+  .celda2{
+    background-color: #fee49f;
+    border-bottom: 2px solid black;
+    text-align: left;
+  }
+  
+  .celda3{
+    background-color: #d6d6d6;
+    text-align: left;
+  
+  }
+  
+  .celda4{
+    background-color: white;
+    text-align: left;
+  
+  }
+  
+  .celda5{
+    background-color: #d6d6d6;
+    text-align: left;
+  
+  }
+  
+  .celda7{
+    background-color: #d6d6d6;
+    border-bottom: 2px solid black;
+    text-align: left;
+  
+  }
+  
+  .celda8{
+    background-color: #fee49f;
+    text-align: left;
+   
+  
+  }
+  
+  td:first-child {
+    width: 15%; 
+  }
+  
+  ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+table thead th {
+border: none;
+background: none;
+padding: 0;
+font-weight: normal;
+text-align: center;
+font-weight: bold;
+}

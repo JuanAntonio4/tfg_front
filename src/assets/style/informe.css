@@ -1,0 +1,73 @@
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  
+}
+  
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.button-back {
+margin-left: 20px;
+margin-top: 20px;
+}
+
+
+.title {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+.date{
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  color: #555;
+}
+
+.table-container {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.principal-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.principal-table td {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+.principal-table td:first-child {
+  font-weight: bold;
+  width: 200px;
+  background-color: #f5f5f5;
+}
+
+
+.materials-table th,
+.materials-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  
+}
+
+.materials-table th {
+  background-color: #e3f2fd;
+  font-weight: 600;
+  
+}
