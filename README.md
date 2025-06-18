@@ -15,13 +15,13 @@ Una vez clonamos el proyecto, se ejecuta
 npm install
 ```
 
-### Comando para compilar el proyecto en desarrollo
+## Comando para compilar el proyecto en desarrollo
 
 ```sh
 npm run dev
 ```
 
-### Comando para compilar el proyecto para producción
+## Comando para compilar el proyecto para producción
 
 ```sh
 npm run build
