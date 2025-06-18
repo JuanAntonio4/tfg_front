@@ -24,7 +24,7 @@
       append-icon="mdi-email" variant="outlined">Enviar por Correo</v-btn>
 
     <div>
-      <!-- Aviso -->
+    
       <div v-if="tipo === 'aviso'">
         <div id="pdf-container">
           <h2 class="title">
@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <!-- Obra -->
+  
       <div v-else>
         <div id="pdf-container">
           <h2 class="title">

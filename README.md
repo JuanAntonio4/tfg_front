@@ -37,7 +37,7 @@ npm run test
 
 ## Variables de entorno
 
-Para el correcto funcionamiento del proyecto en local, se requieren las claves suministradas por Supabase. Estas claves, por motivos de seguridad, no se han publicado en el repositorio. Se ha creado en la raíz del proyecto un archivo .env.ejemplo con las claves que se necesitan. Para asegurar que el proyecto se ejecuta y funciona en local, se deberá, de la entrega realizada al tutor del TFG, extraer el archivo "tfg_front.zip". Una vez se obtiene la carpeta, la abrimos con Visual Studio Code y procemos a ejecutar:
+Para el correcto funcionamiento del proyecto en local, se requieren las claves suministradas por Supabase. Estas claves, por motivos de seguridad, no se han publicado en el repositorio. Se ha creado en la raíz del proyecto un archivo .env.ejemplo con las claves que se necesitan. Para asegurar que el proyecto se ejecuta y funciona en local, se deberá, de la entrega realizada al tutor del TFG, extraer el archivo "tfg_front_juamenvar.zip". Una vez se obtiene la carpeta, la abrimos con Visual Studio Code y procemos a ejecutar:
 
 
 ```sh
